@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="includes/CSS/indexCSS.css">
+	<script type="text/javascript" src="includes/js/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top topbar">
+		<div class="container-fluid">
+	<!--Menu in small window -------------------------------------ii-->	
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MobNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>>
+			<a class="navbar-brand topbarBrand" href="/"><img src="Images/logo2.png" alt="Logo not there"></a>
+			<div class="collapse navbar-collapse" id="MobNav">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li ><a href="#">Gallery</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+	<!--Drop down Window -------------------------------------ii-->
+						<ul class="dropdown-menu">
+							<li><a href="#">Supporting services</a></li>
+							<li><a href="#">Provisioning services</a></li>
+							<li><a href="#">Regulating services</a></li>
+							<li><a href="#">Cultural services</a></li>
+						</ul>
+					</li>
+
+				</ul>
+				<form class="navbar-form pull-left">
+					<input type="text" name="search" class="form-control" placeholder="Search your content..." id="search_box">
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#modalLogin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					
+					
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+	<div class="row">
+	<div class="modal fade" id="modalLogin">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">&times;</button>
+									<img src="Images/logo2.png" alt="Logo not there" style="width:200px;height:81px;margin-left:30%;">
+								</div>
+								<div class="modal-body">
+									
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label class=" control-label col-lg-2" for="inputName">Username</label>
+											<div class="col-lg-10">
+												<input class="form-control" placeholder="Email address or phone number" type="text" name="name" id="inputName">
+											</div>
+
+											<label class="col-lg-2 control-label" for="inputPassword">Password</label>
+											<div class="col-lg-10">
+												<input class="form-control" placeholder="Password" type="password" name="name" id="inputPassword">
+											</div>
+											<div class="LoginButtons">
+												<button class="btn btn-success " type="submit" id="send">Login</button>
+												<button class="btn btn-default "  data-dismiss="modal">Cancel</button>
+											</div>
+
+										</div>
+
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+	</div>
+	</div>
+	<!---Carousel-------------------------------------------------->
+	<div class="container">
+		<div class="carousel slide" id="home_slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#home_slide"></li>
+				<li data-slide-to="1" data-target="#home_slide"></li>
+				<li data-slide-to="2" data-target="#home_slide"></li>
+				<li data-slide-to="3" data-target="#home_slide"></li>
+				<li data-slide-to="4" data-target="#home_slide"></li>	
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<!--<img src="Images/Slide_home/large/large_First.jpg" alt="Not avilable">-->
+					<div class="carousel-caption">
+						<h4>Biodiversity</h4>
+						<p>generally refers to the variety and variability of life on Earth</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide2">
+					<!--<img src="Images/Slide_home/large/large_second.jpg" alt="Not avilable">-->
+					<div class="carousel-caption">
+						<h4>Environmental movement</h4>
+						<p> A diverse scientific, social, and political movement for addressing environmental issues</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide3">
+					<!--<img src="Images/Slide_home/large/large_three.jpg" alt="Not avilable">-->
+					<div class="carousel-caption">
+						<h4>Environmental globalization</h4>
+						<p> coordinated practices and regulations regarding environmental protection</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide4">
+					<!--<img src="Images/Slide_home/large/large_fourth.jpg" alt="Not avilable">-->
+					<div class="carousel-caption">
+						<h4>Green solutions</h4>
+						<p> the application of one or more of environmental science, green chemistry</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide5">
+					<!--<img src="Images/Slide_home/large/large_fifth.jpg" alt="Not avilable">-->
+					<div class="carousel-caption">
+						<h4>Public information and participation</h4>
+						<p> Public to express opinions regarding political, economic</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" data-slide="prev" href="#home_slide"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#home_slide"><span class="icon-next"></span></a>
+		</div>
+		<!---Well Area-------------------------------------------------->
+		<div class="row" id="BigArea">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade in" id="joinAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success</h4>
+					<p>Thanks for support us go on.......</p>
+				</div>
+
+				<div class="well well-small visible-sm visible-xs">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-earphone"></span>Give a Call Us..</a>
+				</div>
+				<div class="well import_code">
+					<div class="page-header">
+						<h1>Environmental Protection <small> awareness of the various environmental issues</small> </h1>
+						<p class="lead">Environmental protection is a practice of protecting the natural environment on individual, organisation controlled or governmental levels, for the benefit of both the environment and humans.</p>
+						<a href="" class="btn btn-large btn-success" id="join_click">Support us..</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+<!---Content Area-------------------------------------------------->
+		<div class="row" id="contentHeading">
+			<div class="col-12">
+				<h2>Forest protection</h2>
+				<p class="lead">
+					Forest protection is the preservation or improvement of a forest threatened or affected by the nature. Thus forest protection also has a legal status and rather than protection from only people damaging the forests is seen to be broader and include forest pathology too.
+				</p>
+			</div>
+		</div>
+		<div class="row" id="contents">
+			<div class="col-sm-4 content">
+	<!--Panel datas -------------------------------------ii-->		
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Flowers</h3>
+					</div>
+					<img src="Images/badge_flower.jpg" alt="No pic avilable" class="img-circle">
+					<p>A forest is a large area dominated by trees.Hundreds of more precise definitions of forest are used throughout the world</p>
+					<a href="" target="_blank" class="btn btn-success btn-block">Wild Flowers</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Animals</h3>
+					</div>
+					<img src="Images/badge_deer.jpg" alt="No pic avilable" class="img-circle">
+					<p>A forest is a large area dominated by trees.Hundreds of more precise definitions of forest are used throughout the world</p>
+					<a href="" target="_blank" class="btn btn-success btn-block">Wild Animals</a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Birds</h3>
+					</div>
+					<img src="Images/badge_birds.jpg" alt="No pic avilable" class="img-circle">
+					<p>A forest is a large area dominated by trees.Hundreds of more precise definitions of forest are used throughout the world</p>
+					<a href="" target="_blank" class="btn btn-success btn-block">Wild Birds</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="tabInfoAndMap">
+			<div class="col-sm-6">
+				<h3>Why should we protect the environment?</h3>
+	<!--Tab Content-------------------------------------ii-->			
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Food Chain</a></li>
+						<li ><a href="#tab2" data-toggle="tab">Ecosystem</a></li>
+						<li ><a href="#tab3" data-toggle="tab">Natural Beauty</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="tab1" class="tab-pane active food chain">
+							<h4>Why Our Environment Matters So Much?<small> how pollution affects the food chain</small></h4>
+							<p>
+								The simplest explanation about why the environment matters is that, as humans, the environment-the Earth-is our home. It is where we live, breathe, eat, raise our children, etc. Our entire life support system is dependent on the well-being of all of the species living on earth. 
+							</p>
+							<p>
+								The food chain is an example of this. The sun provides light and heat for plants. The plants are consumed by animals who are in turn consumed by other animals who may in turn, be consumed by humans. Or perhaps they are used for material, clothing, etc. Even insects like mosquitoes play a role and of course bees pollinate plants.
+							</p>
+							<img src="Images/foodchain.png" alt="No pic avilable" >
+						</div>
+
+						<div id="tab2" class="tab-pane fade ecosystem">
+							<h4>What is an Ecosystem?<small> ecosystem includes all of the living things (plants, animals and organisms) in a given area
+							</small></h4>
+							<img src="Images/Ecosystem.jpg" alt="No pic avilable" class="thumbnail pull-left" style="width:380px;width:300px;">
+							<p>
+								Within the overall biosphere, or ecosystem, there are smaller ecosystems like the rainforests, marine ecosystems, the desert and the tundra. When any of these systems are off kilter, it impacts the entire planet. All of the environmental problems that exist have far-reaching implications for the health of our planet and its inhabitants.
+							</p>
+							<p>
+								For example, global warming causes a rise in sea levels which effects marine life. The rising sea levels also cause land erosion which harms the habitats of animals living by the coast. Global warming also melts polar caps and leads to arctic shrinking. This endangers the polar bears and other arctic wildlife. Since the icecaps are made of fresh water, they will throw off the saline levels in the ocean which will affect ocean currents.
+							</p>
+						</div>
+
+						<div id="tab3" class="tab-pane fade natural">
+							<h4>Nature,<small>  in the broadest sense, is the natural, physical, or material world or universe
+							</small></h4>
+							<img src="Images/natural.gif" alt="No pic avilable" class="thumbnail pull-center " style="width:380px;width:300px;">
+							<p>
+								Another reason why the environment is so important is because it is a source of natural beauty. According to Healthy nature healthy people: contact with nature as an upstream health promotion intervention for populations, a research paper written by Cecily Maller, Mardie Townsend, Anita Pryor, Peter Brown and Lawrence St Leger, nature plays a key role in human health and well-being. The paper even suggests that contact with nature might play a role in preventing mental illness.
+							</p>
+							<p>
+								Unfortunately the planet is in danger. Many species of animals and plants are nearing distinction
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>Our Location. <small>You can find us here</small></h3>
+	<!--Google Map-------------------------------------ii-->
+				<iframe width="100%" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31449.323270673885!2d77.13261317551698!3d9.83646164965011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07a7d652aa57b5%3A0x54f328bc3a6a742f!2sNedumkandam%2C+Kerala!5e0!3m2!1sen!2sin!4v1478759960963" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<hr>
+				<h3>Do you have any queries?<small> Click the below button give us mail..</small></h3>
+				<a href="#modalMail" role="button" class="btn btn-success" data-toggle="modal">Give us a mail..</a>
+	<!--Mailing Modal Window -------------------------------------ii-->
+				<div class="modal fade" id="modalMail">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<img src="Images/logo2.png" alt="Logo not there" style="width:150px;height:60px;">
+								<h4>Your suggestions are welcome </h4>
+							</div>
+							<div class="modal-body">
+								<h4>Email us....</h4>
+								<p>You can give your ideas and suggestions.That will help us improve</p>
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class=" control-label col-lg-2" for="inputName">Name</label>
+										<div class="col-lg-10">
+											<input class="form-control" placeholder="Name" type="text" name="name" id="inputName">
+										</div>
+
+										<label class="col-lg-2 control-label" for="inputEmail">Email Id</label>
+										<div class="col-lg-10">
+											<input class="form-control" placeholder="Email" type="email" name="name" id="inputEmail">
+										</div>
+										
+										<label class="col-lg-2 control-label" for="message">Message</label>
+										<div class="col-lg-10">
+											<textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+										</div>
+										<div>
+											<button class="btn btn-success pull-right" type="submit" id="send">Send</button>
+										</div>
+									</div>
+									
+								</form>
+								<p><small class="text-muted">Email Id is an unavoided part while mailing</small></p>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">Close</button>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<hr>
+<!---Quotes and Vedio Section---------------------------------------------------ii-->		
+		<div class="row" id="quotesAndVedio">
+			<div class="col-lg-6">
+				<h3>Save our plants and trees</h3>
+				<p>“The best time to plant a tree is twenty years ago. The second best time is now.” </p>
+				<div class="list-group">
+					<div class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Rene Dubos</h4>
+						<p class="list-group-item-text">“We abuse the land because we regard it as a commodity belonging to us. When we see land as a community to which we belong, we may begin to use it with love and respect.”</p>
+					</div>
+					<div class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Aldo Leopold</h4>
+						<p class="list-group-item-text">“When one tugs at a single thing in nature, he finds it attached to the rest of the world.”</p>
+					</div>
+					<div class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Albert Einstein</h4>
+						<p class="list-group-item-text">“If what I say resonates with you, it is merely because we are both branches on the same tree.” </p>
+					</div>
+					
+					<div class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Malay proverb</h4>
+						<p class="list-group-item-text">“Keep a green tree in your heart and perhaps a singing bird will come.” </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h3>Just See it....</h3>
+				<p>Dont miss it. </p>
+				<iframe width="100%" height="325" src="https://www.youtube.com/embed/xThlceHTduw" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+<!------Footer--------------------------------------------ii-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="Images/logo2.png" alt="Logo not there" >
+				</div>
+				<div class="col-sm-4">
+					<h4>FOLLOW US ON</h4>
+					<a href="" style="list-style:none;color:#ffffff"><p><i class="fa fa-facebook " aria-hidden="true"  ></i> facebook</p></a>
+					<a href="" style="list-style:none;color:#ffffff"><p><i class="fa fa-twitter " aria-hidden="true"  ></i> twitter</p></a>
+					<a href="" style="list-style:none;color:#ffffff"><p><i class="fa fa-google-plus " aria-hidden="true"></i> google plus</p></a>
+				</div>
+				<div class="col-sm-4">
+					<h4>MOBILE & APP</h4>
+					<p><i class="fa fa-mobile" aria-hidden="true"></i> m.gogreen.com</p>
+					<p><i class="fa fa-android" aria-hidden="true"></i> Android</p>
+					<p><i class="fa fa-apple" aria-hidden="true"></i> IOS</p>
+				</div>
+				<div class="col-sm-12" style="text-align:center">
+					<h6>Copyright&copy;2016 gogreen.com</h6>
+				</div>
+
+			</div>
+		</div>	
+	</footer>
+</body>
+</html>
