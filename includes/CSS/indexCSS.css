@@ -2,8 +2,8 @@
 /*Navigation Bar----------------------------------------------------*/
 .navbar-brand img
 {
-	width:180px;
-	height: 74px;
+	width:150px;
+	height: 54px;
 }
 .topbar
 {
@@ -28,6 +28,8 @@
  	padding-left: 8PX;
  	padding-bottom: 15px;
 }
+
+.mob_left
 /*Login Modal Window----------------------------------------------------*/
 .LoginButtons
 {
@@ -42,7 +44,7 @@
 	margin-bottom: 10px;
 }
 /*Carousel-----------------------------------------------------------------*/
-#home_slide .item
+/*#home_slide .item
 {
 	height: 400px;
 }
@@ -65,7 +67,7 @@
 #slide5
 {
 	background: url("../../Images/Slide_home/medium/fifth_medium.jpg") top center no-repeat;
-}
+}*/
 
 .carousel-caption h4
 {
@@ -86,6 +88,21 @@
 {
 	margin-top: 90px;
 }
+.carousel-caption h4
+	{
+		font-size: 10px;
+		color:#ffffff;
+		text-shadow: 4px 3px 1px #000000;
+		font-weight: bold;
+	}
+
+	.carousel-inner p
+	{
+		font-size: 8px;
+		color: #ffffff;
+		text-shadow: 4px 2px 2px #000000;
+		font-weight: bold;
+	}
 
 /*Well Code......................................*/
 body
@@ -162,8 +179,13 @@ margin-left:20%;
 }
 #send
 {
-padding-right: 15px;
-margin-right: 15px;
+padding-left: 30px;
+margin-left: 30px;
+}
+#send1
+{
+padding-left: 30px;
+margin-left: 30px;
 }
 /*Footer-----------------------------------------*/
 footer
@@ -183,14 +205,77 @@ footer img
 	width:180px;
 	height: 74px;
 }
+/*--------------------------------------------------------------------------Second Page Designs----------------------------------------------------*/
+.secTopbarBrand
+{
+	width:360px;
+	height:148px;
+}
+ .SecTopBar h3
+	{
+		
+		float: right;
+		font-size: 18px;
+		padding-right: 10%;
+		
+	}
+.affix
+	{
+	      top: 0;
+	      width: 100%;
+  	}
+
+ .affix + .container-fluid 
+  	{
+      		padding-top: 70px;
+ 	}
+
 /*Media Elements---------------------------------*/
 @media(max-width: 480px)
 {
+/*Second Page----------------------------*/
+	 .SecTopBar h3
+	{
+		width:600px;
+		float: right;
+		font-size: 18px;
+		padding-right: 10%;
+		padding-top:90px;
+		
+	}
+	.topbar
+	{
+		width: 600px;
+	}
+	.affix
+	{
+	      top: 0;
+	      width: 100%;
+  	}
 
+ .affix + .container-fluid 
+  	{
+      		padding-top: 70px;
+ 	}
+	.carousel-caption h4
+	{
+		font-size: 10px;
+		color:#ffffff;
+		text-shadow: 4px 3px 1px #000000;
+		font-weight: bold;
+	}
+
+	.carousel-inner p
+	{
+		font-size: 5px;
+		color: #ffffff;
+		text-shadow: 4px 2px 2px #000000;
+		font-weight: bold;
+	}
 }
 @media(max-width: 768px)
 {
-	#home_slide .item
+	/*#home_slide .item
 	{
 		height: 310px;
 	}
@@ -213,7 +298,7 @@ footer img
 	#slide5
 	{
 		background: url("../../Images/Slide_home/small/fifth_small.jpg") top center no-repeat;
-	}
+	}*/
 	.carousel-caption h4
 	{
 		font-size: 20px;
@@ -233,19 +318,36 @@ footer img
 	{
 		background-color: #292b2d;
 	}
+	#MobNav
+{
+	width: 100%;
+	height: 100%;
+
+
+}
 	footer
 	{
 		text-align: center;
 	}
+	/*Second Page----------------------------*/
+	.SecTopBar h3
+	{
+		float: right;
+		font-size: 18px;
+		padding-right: 10%;
+		
+	}
+
 
 }
 @media(min-width: 1200px)
 {
 	.navbar-brand img
 	{
-		width:200px;
-		height: 80px;
+		width:150px;
+		height: 60px;
 	}
+	
 
 	.navbar-nav>li>a {
 	 	padding-top: 15px;
@@ -293,4 +395,63 @@ footer img
 		text-shadow: 4px 2px 2px #000000;
 		font-weight: bold;
 	}
-}
+	/*------------------------------------Second Page--------------------------*/
+	.secTopbarBrand
+	{
+		width:360px;
+		height:148px;
+	}
+	.SecTopBar h3
+	{
+		float: right;
+		font-size: 30px;
+		padding-right: 30%;
+		padding-top:90px;
+
+	}
+	.affix
+	{
+	      top: 0;
+	      width: 100%;
+  	}
+
+  .affix + .container-fluid 
+  	{
+      		padding-top: 70px;
+ 	}
+	#SecBody
+	{
+		margin: 0;
+		padding: 0;
+		background: url('../../Images/SecPage/Green.png') no-repeat center center fixed;
+	    
+	}
+	/*Second Page Content-----------------------------------------------*/
+	#Sec_contents
+	{
+		text-align: center;
+	}
+	#Sec_contents img
+	{
+	    margin: 20px;
+	}
+	#Sec_contents .panel .panel-heading h3
+	{
+		color:#05720e;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.img-thumbnail
+	{
+		position: relative;;
+	}
+	.price	
+	{
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		padding: 20px;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}	
